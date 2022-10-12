@@ -5,7 +5,9 @@ VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CardStorageService", "CardStorageService\CardStorageService.csproj", "{0405F2D3-7877-4E72-B738-2E17B6F401F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardStorageService.Data", "CardStorageService.Data\CardStorageService.Data.csproj", "{0537E7DC-E25F-424E-A48C-3B3DF3864AE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CardStorageService.Data", "CardStorageService.Data\CardStorageService.Data.csproj", "{0537E7DC-E25F-424E-A48C-3B3DF3864AE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordUtilsClient", "PasswordUtilsClient\PasswordUtilsClient.csproj", "{6046C475-3CAA-41F7-A822-549F3D7A490E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{0537E7DC-E25F-424E-A48C-3B3DF3864AE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0537E7DC-E25F-424E-A48C-3B3DF3864AE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0537E7DC-E25F-424E-A48C-3B3DF3864AE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6046C475-3CAA-41F7-A822-549F3D7A490E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6046C475-3CAA-41F7-A822-549F3D7A490E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6046C475-3CAA-41F7-A822-549F3D7A490E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6046C475-3CAA-41F7-A822-549F3D7A490E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
