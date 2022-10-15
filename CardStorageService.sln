@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CardStorageService", "CardS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CardStorageService.Data", "CardStorageService.Data\CardStorageService.Data.csproj", "{0537E7DC-E25F-424E-A48C-3B3DF3864AE0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordUtilsClient", "PasswordUtilsClient\PasswordUtilsClient.csproj", "{6046C475-3CAA-41F7-A822-549F3D7A490E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PasswordUtilsClient", "PasswordUtilsClient\PasswordUtilsClient.csproj", "{6046C475-3CAA-41F7-A822-549F3D7A490E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
