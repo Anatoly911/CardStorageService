@@ -14,6 +14,5 @@ namespace CardStorageService.Data
         public DbSet<Account> Accounts { get; set; }
         public DbSet<AccountSession> AccountSessions { get; set; }
         public CardStorageServiceDbContext(DbContextOptions options) : base(options) { }
-
     }
 }
