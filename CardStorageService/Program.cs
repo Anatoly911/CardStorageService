@@ -17,6 +17,23 @@ namespace CardStorageService
     {
         public static void Main(string[] args)
         {
+            /*ConnectionString connectionString1 = new ConnectionString
+            {
+                DatabaseName = "Database1",
+                Host = "localhost",
+                Password = "12345",
+                UserName = "User1"
+            };
+            List<ConnectionString> connections = new List<ConnectionString>();
+            CacheProvider cacheProvider = new CacheProvider();
+            cacheProvider.CacheConnections(connections);
+            connections.Add(connectionString1);
+            CacheProvider cacheProvider = new CacheProvider();
+            List<ConnectionString> connections = cacheProvider.GetConnectionFromCache();
+            foreach (var connection in connections)
+            {
+                Console.WriteLine($"{connection.Host}{connection.DatabaseName}{connection.UserName}{connection.Password}");
+            }*/
             var builder = WebApplication.CreateBuilder(args);
             builder.Services.Configure<DatabaseOptions>(options =>
             {
