@@ -2,6 +2,7 @@
 using CardStorageService.Models;
 using CardStorageService.Models.Requests;
 using CardStorageService.Services;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -9,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace CardStorageService.Controllers
 {
     [Authorize]
-    [Route("api/[controller]")]
+    [Route("api/cards")]
     [ApiController]
     public class CardController : ControllerBase
     {
@@ -21,11 +22,21 @@ namespace CardStorageService.Controllers
             _cardRepositoryService = cardRepositoryService;
         }
         [HttpPost("create")]
+       /* [ProducesResponseType(typeof(IDictionary<string, string[]>), StatusCodes.Status400BadRequest)]*/
         [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
         public IActionResult Create([FromBody] CreateCardRequest request)
         {
             try
             {
+               /* ValidationResult validationResult = _createCardRequestValidator.Validate(request);
+                if (validationResult.IsValid)
+                    return BadRequest(validationResult.ToDictionary());
+                var cardId = _cardRepositoryService.Create(_mapper.Map<Card>(request));
+                return Ok(new CreateCardResponse
+                {
+                    CardId = cardId.ToString()
+                });*/
+
                 var cardId = _cardRepositoryService.Create(new Card
                 {
                     ClientId = request.ClientId,
